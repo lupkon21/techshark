@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: #6daffe;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #6daffe;
+  color: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Rubik", sans-serif;
+  background-image: none;
+  background-color: transparent;
+}
+
+.container {
+  height: 100vh;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: 10% 85% 5%;
+      grid-template-rows: 10% 85% 5%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'header content' 'nav content' 'footer content';
+}
+
+header {
+  background-color: #15266f;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+header img {
+  max-width: 70%;
+  margin: 10px 0 0 0;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+nav {
+  background-color: #15266f;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  font-size: 1.2rem;
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9f3ed;
+  display: block;
+  text-align: center;
+  margin: 5px 0 5px 0;
+  padding: 10px 0 10px 0;
+}
+
+nav a:hover {
+  background-color: #6daffe;
+  color: #15266f;
+  font-weight: 400;
+}
+
+nav a img {
+  position: relative;
+  top: 3px;
+}
+
+section {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: content;
+  padding: 5% 10% 0 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: justify;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+section article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+section .date {
+  color: #15266f;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: #15266f;
+  color: #ffffff;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  color: #6daffe;
+  text-decoration: none;
+}
+
+.db-output {
+  margin-top: 15px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-collapse: collapse;
+  display: block;
+  max-height: 650px;
+  overflow: auto;
+}
+
+.db-output th,
+.db-output td,
+.db-output tr {
+  padding: 20px;
+  text-align: center;
+  border: none;
+}
+
+.db-output thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #15266f;
+  color: #ffffff;
+}
+
+.db-output tbody tr:hover {
+  background-color: #6daffe;
+}
+
+.db-output::-webkit-scrollbar {
+  width: 1.15em;
+}
+
+.db-output::-webkit-scrollbar-thumb {
+  background-color: #15266f;
+}
+
+#customers_db_output {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.btn {
+  background-color: #15266f;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: #ff4040;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.modal h2 {
+  color: #15266f;
+}
+
+.modal form {
+  color: #000000;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.modal form input[type='text'],
+.modal form input[type='email'],
+.modal form input[type='number'],
+.modal form textarea {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-size: 1.05rem;
+  border-radius: 5px;
+  border: 1px solid #15266f;
+  margin-top: 5px;
+}
+
+.modal form input[type='text']:focus,
+.modal form input[type='email']:focus,
+.modal form input[type='number']:focus,
+.modal form textarea:focus {
+  -webkit-box-shadow: 0 0 0 2px #6daffe;
+          box-shadow: 0 0 0 2px #6daffe;
+}
+
+.modal form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.modal form label {
+  font-size: 1.1rem;
+}
+
+.btn-close {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  color: #15266f;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.btn-submit,
+.btn-submit-review {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.navbar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 0 0 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.navbar .search-bar {
+  display: inline-block;
+}
+
+.navbar .search-bar input[type='text'] {
+  font-family: "Rubik", sans-serif;
+  width: 200px;
+  padding: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #15266f;
+}
+
+.navbar .search-bar input[type='text']:focus {
+  -webkit-box-shadow: 0 0 0 2px #6daffe;
+          box-shadow: 0 0 0 2px #6daffe;
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  color: #6daffe;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: #ffffff;
+}
+
+.progress::-webkit-progress-value {
+  border-radius: 10px;
+  background-color: #6daffe !important;
+}
+/*# sourceMappingURL=style.css.map */

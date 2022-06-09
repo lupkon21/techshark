@@ -1,0 +1,35 @@
+[
+    { "nickname": "Becky C.", "email": "becky@gmail.com", "stars": "5", "comment": "I am so pleased with this product." },
+    { "nickname": "Griffin Q.", "email": "griffin@gmail.com", "stars": "5", "comment": "I love Techshark." },
+    { "nickname": "Ruthy T.", "email": "ruthy@gmail.com", "stars": "5", "comment": "I would be lost without Techshark." },
+    { "nickname": "Angy L.", "email": "angy@gmail.com", "stars": "5", "comment": "The best on the net!" },
+    {
+        "nickname": "Wright P.",
+        "email": "wright@gmail.com",
+        "stars": "5",
+        "comment": "Techshark saved my business. Definitely worth the investment. I have gotten at least 50 times the value from Techshark. I use Techshark often."
+    },
+    { "nickname": "Cate R.", "email": "cate@gmail.com", "stars": "5", "comment": "Techshark is the next killer app." },
+    { "nickname": "Nolana Z.", "email": "nolana@gmail.com", "stars": "4", "comment": "Techshark did exactly what you said it does." },
+    {
+        "nickname": "Rozalin U.",
+        "email": "rozalin@gmail.com",
+        "stars": "5",
+        "comment": "Techshark has really helped our business. I like Techshark more and more each day because it makes my life a lot easier."
+    },
+    { "nickname": "Arden E.", "email": "arden@gmail.com", "stars": "5", "comment": "Techshark has got everything I need. You've saved our business!" },
+    {
+        "nickname": "Sindee T.",
+        "email": "sindee@gmail.com",
+        "stars": "5",
+        "comment": "After using Techshark my business skyrocketed! Techshark is the most valuable business resource we have EVER purchased. You won't regret it."
+    },
+    { "nickname": "Cassi Q.", "email": "cassi@gmail.com", "stars": "5", "comment": "Not able to tell how happy I am with Techshark." },
+    { "nickname": "Pippa E.", "email": "pippa@gmail.com", "stars": "5", "comment": "Needless to say we are extremely satisfied with the results." },
+    {
+        "nickname": "Johny L.",
+        "email": "johny@gmail.com",
+        "stars": "5",
+        "comment": "Thanks guys, keep up the good work! Techshark saved my business. Very easy to use. I would be lost without Techshark."
+    }
+]
